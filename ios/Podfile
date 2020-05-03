@@ -77,6 +77,10 @@ target 'covid19app' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+  pod 'rn-range-slider', :path => '../node_modules/rn-range-slider'
+
   target 'covid19appTests' do
     inherit! :complete
     # Pods for testing
