@@ -9,9 +9,9 @@ This app uses data provided by [Rodrigo Pombo](https://github.com/pomber/covid19
 ## Screenshots
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/bentoavb/covid19app/master/screenshots/img1.jpeg" width="200" />
-<img src="https://raw.githubusercontent.com/bentoavb/covid19app/master/screenshots/img2.jpeg" width="200" />
-<img src="https://raw.githubusercontent.com/bentoavb/covid19app/master/screenshots/img3.jpeg" width="200" />
+<img src="https://raw.githubusercontent.com/bentoavb/covid19app/master/screenshots/img1.jpeg" width="250" />
+<img src="https://raw.githubusercontent.com/bentoavb/covid19app/master/screenshots/img2.jpeg" width="250" />
+<img src="https://raw.githubusercontent.com/bentoavb/covid19app/master/screenshots/img3.jpeg" width="250" />
 </p>
 
 ## License

@@ -71,7 +71,7 @@ const loadChart = (self, data) => <LineChart
       backgroundGradientFrom: '#ffc300',
       backgroundGradientTo: '#ffc300',
       decimalPlaces: 0, // optional, defaults to 2dp
-      color: (opacity = 1) => "#212121",
+      color: (opacity = 1) => `rgba(33, 33, 33, ${opacity})`,
       propsForBackgroundLines:{
         stroke: "#ffc300"
       },
