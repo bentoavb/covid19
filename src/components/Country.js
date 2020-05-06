@@ -12,7 +12,7 @@ class Country extends Component {
         return (
             <ScrollView style={styles.scrollView}>
                 <View style={styles.mainView}>
-                    <Text style={styles.text}>{name}</Text>
+                    <Text style={styles.title}>{name}</Text>
                     {buttons(this)}
                     {this.state.chart}
                 </View>
@@ -50,9 +50,9 @@ const styles = StyleSheet.create({
     flex: 1, 
     alignItems: "center", 
     justifyContent: "space-between",
-    paddingTop: 30
+    paddingTop: 10
   },
-  text:{
+  title:{
     backgroundColor: "#ffc300", //"#ffc300",
     borderRadius: 3,
     color: "#ffffff",
@@ -65,7 +65,7 @@ const styles = StyleSheet.create({
     alignSelf: "stretch",
     flex: 1,
     flexDirection: "row",
-    justifyContent: "flex-end"
+    justifyContent: "space-evenly"
   },
   button: {
     marginHorizontal: 10

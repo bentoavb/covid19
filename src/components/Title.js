@@ -12,7 +12,7 @@ function Title() {
 
 const styles = StyleSheet.create({
     view: {
-      backgroundColor: "#900c3f",
+      backgroundColor: "#FFA000",
       alignSelf: "stretch",
       flex: 0,
       flexDirection: "row",

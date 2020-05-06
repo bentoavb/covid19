@@ -88,18 +88,19 @@ const loadChart = (self, data) => <LineChart
 const styles = StyleSheet.create({
   text:{
     backgroundColor: "#ffc300", //"#ffc300",
-    borderRadius: 3,
     color: "#ffffff",
     padding: 5,
-    width: Dimensions.get('window').width*0.5,
+    width: Dimensions.get('window').width*0.883,
     textAlign: "center",
-    marginTop: 25,
     fontSize: 20,
+    marginBottom: 0,
+    marginTop: 25,
   },
   chart: {
     fontSize: 1,
     margin: -15,
-    marginVertical: 25
+    marginBottom: 15,
+    marginTop: 0
   },
   main: {
     margin: 10,
@@ -107,10 +108,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignSelf: "stretch",
     justifyContent: "center",
-    alignItems: "center",
-    borderColor: "#ffc300",
-    borderWidth: 3,
-    borderRadius: 3
+    alignItems: "center"
   }
 });
 

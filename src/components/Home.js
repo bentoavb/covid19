@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-import { Text, Button, TextInput, View, StyleSheet, Dimensions, ScrollView, SafeAreaView } from 'react-native';
-
+import { Button, TextInput, View, StyleSheet, ScrollView } from 'react-native';
 
 import {loadCountry, showCountries} from '../tools/countries';
-import Chart from './Chart';
 
 class Home extends Component {
   state = {
@@ -26,7 +24,7 @@ class Home extends Component {
       <View style={styles.mainView}> 
 
         <TextInput
-          style={{ marginTop: 30, height: 40, width: 300, borderColor: 'gray', borderWidth: 1, borderRadius: 3 }}
+          style={styles.textInput}
           onChangeText={text => {
             this.setState({ options: showCountries(text, this.state.keys) })
           }}
@@ -37,7 +35,7 @@ class Home extends Component {
           {this.state.options.map(e => {
             return (
               <View key={e} style={{marginTop:10, marginHorizontal: 10}}>
-              <Button color="#c70039" title={e} 
+              <Button color="#FFC107" title={e} 
               onPress={() => {
                 let linedata = loadCountry(this.state.data[e])
                 this.props.navigation.navigate("Country", {
@@ -68,6 +66,15 @@ const styles = StyleSheet.create({
     alignItems: "center", 
     justifyContent: "space-between"
   },
+  textInput: { 
+    marginTop: 10, 
+    height: 40, 
+    width: 300, 
+    borderColor: 'gray', 
+    borderWidth: 1, 
+    borderRadius: 3 
+
+  }
 });
 
 

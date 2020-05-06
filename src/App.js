@@ -11,7 +11,7 @@ import Router from './Router.js';
 const App: () => React$Node = () => {
   return (
     <>
-      <StatusBar backgroundColor={"#900c3f"}  />
+      <StatusBar backgroundColor={"#FFA000"}  />
       <Title />
       <Router />
     </>
