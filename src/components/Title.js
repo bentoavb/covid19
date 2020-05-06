@@ -23,11 +23,11 @@ const styles = StyleSheet.create({
     text1: {
       fontSize: 30,
       marginLeft: 7,
-      color: "#ffffff"
+      color: "#212121"
     },
     text2: {
       fontSize: 21,
-      color: "#ffffff"
+      color: "#212121"
     }
 });
 

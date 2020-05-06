@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Button, TextInput, View, StyleSheet, ScrollView } from 'react-native';
-
+import { TextInput, View, StyleSheet, ScrollView } from 'react-native';
+import { Button } from 'react-native-elements';
 import {loadCountry, showCountries} from '../tools/countries';
 
 class Home extends Component {
@@ -35,7 +35,9 @@ class Home extends Component {
           {this.state.options.map(e => {
             return (
               <View key={e} style={{marginTop:10, marginHorizontal: 10}}>
-              <Button color="#FFC107" title={e} 
+              <Button title={e} 
+              buttonStyle={{backgroundColor:"#ffc300"}} 
+              titleStyle={{color: "#212121"}}
               onPress={() => {
                 let linedata = loadCountry(this.state.data[e])
                 this.props.navigation.navigate("Country", {
@@ -70,14 +72,12 @@ const styles = StyleSheet.create({
     marginTop: 10, 
     height: 40, 
     width: 300, 
+
     borderColor: 'gray', 
     borderWidth: 1, 
     borderRadius: 3 
-
   }
 });
-
-
 
 
 export default Home;

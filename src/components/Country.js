@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Text, Button, TextInput, View, StyleSheet, Dimensions, ScrollView, SafeAreaView } from 'react-native';
+import { Text, TextInput, View, StyleSheet, Dimensions, ScrollView, SafeAreaView } from 'react-native';
+import { Button } from 'react-native-elements';
 
 import Chart from './Chart';
 
@@ -31,10 +32,13 @@ const loadChart = (self, name) =>{
 const buttons = (self) => <View style={styles.buttons}>
   {Array("Cases", "Deaths", "Recovered").map(e => {
     return (
-      <View key={e} style={styles.button}>  
-      <Button color="#ffc300" title={e} onPress={() => {
-        loadChart(self, e)
-      }}
+      <View key={e} style={styles.button}> 
+      <Button title={e} 
+        buttonStyle={{backgroundColor:"#ffc300"}} 
+        titleStyle={{color: "#212121"}}
+        onPress={() => {
+          loadChart(self, e)
+        }}
       />
       </View>
     );
@@ -55,11 +59,11 @@ const styles = StyleSheet.create({
   title:{
     backgroundColor: "#ffc300", //"#ffc300",
     borderRadius: 3,
-    color: "#ffffff",
+    color: "#212121",
     padding: 7,
     width: Dimensions.get('window').width*0.95,
     fontSize: 25,
-    marginBottom: 5
+    marginVertical: 15
   },
   buttons: {
     alignSelf: "stretch",

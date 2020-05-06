@@ -71,7 +71,7 @@ const loadChart = (self, data) => <LineChart
       backgroundGradientFrom: '#ffc300',
       backgroundGradientTo: '#ffc300',
       decimalPlaces: 0, // optional, defaults to 2dp
-      color: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+      color: (opacity = 1) => "#212121",
       propsForBackgroundLines:{
         stroke: "#ffc300"
       },
@@ -88,7 +88,7 @@ const loadChart = (self, data) => <LineChart
 const styles = StyleSheet.create({
   text:{
     backgroundColor: "#ffc300", //"#ffc300",
-    color: "#ffffff",
+    color: "#212121",
     padding: 5,
     width: Dimensions.get('window').width*0.883,
     textAlign: "center",
